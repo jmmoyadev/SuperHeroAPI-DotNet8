@@ -1,6 +1,20 @@
-@SuperHeroAPI_DotNet8_HostAddress = http://localhost:5252
+
+@SuperHeroAPI_DotNet8_HostAddress = https://localhost:7148
 
 GET {{SuperHeroAPI_DotNet8_HostAddress}}/weatherforecast/
 Accept: application/json
+
+###
+
+
+GET {{SuperHeroAPI_DotNet8_HostAddress}}/api/superhero
+
+###
+
+GET {{SuperHeroAPI_DotNet8_HostAddress}}/api/superhero/1
+
+###
+
+GET {{SuperHeroAPI_DotNet8_HostAddress}}/api/superhero/999
 
 ###
