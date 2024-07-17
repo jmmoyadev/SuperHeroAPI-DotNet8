@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using SuperHeroAPI_DotNet8.Controllers;
 using SuperHeroAPI_DotNet8.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -29,5 +30,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.MapSuperHeroEndpoints();
 
 app.Run();
